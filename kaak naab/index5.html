@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - K’ÁAK’NÁAB - COMPANY</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #92c5fc;
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            color: #003785;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #003785;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .hipervinculo {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .hipervinculo a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 22px;
+        }
+
+        .hipervinculo a:hover {
+            text-decoration: underline;
+        }
+
+        .contenedor-contacto {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 35px 25px;
+            background-color: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0, 55, 133, 0.18);
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .contenedor-contacto p,
+        .contenedor-contacto label,
+        .contenedor-contacto input,
+        .contenedor-contacto textarea,
+        .contenedor-contacto button {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .form-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .campo-formulario {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .campo-formulario label {
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .campo-formulario input,
+        .campo-formulario textarea {
+            width: 100%;
+            max-width: 540px;
+            padding: 12px 14px;
+            font-family: Arial, sans-serif;
+            color: #003785;
+            background-color: #f4f9ff;
+            border: 2px solid #003785;
+            border-radius: 8px;
+        }
+
+        .campo-formulario textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .btn-enviar {
+            margin-top: 10px;
+            padding: 14px 34px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #003785;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn-enviar:hover {
+            background-color: #002356;
+        }
+
+        .mensaje-confirmacion {
+            display: none;
+            margin-top: 18px;
+            font-weight: bold;
+            color: #003785;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="logo kaak naab.png" alt="Logo" width="100" height="70">
+                    K’ÁAK’NÁAB - COMPANY
+                </a>
+            </div>
+            <div class="hipervinculo">
+                <div><a href="file:///D:/kaak%20naab/index1.html">volver a inicio</a></div>
+                <div><a href="file:///D:/kaak%20naab/index2.html">Productos</a></div>
+                <div><a href="file:///D:/kaak%20naab/index3.html">Objetivo</a></div>
+                <div><a href="file:///D:/kaak%20naab/index4.html">Campañas</a></div>
+                <div><a href="file:///D:/kaak%20naab/index5.html">Contáctanos</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-contacto">
+        <h2 style="font-size: 35px;">Contáctanos</h2>
+        <p>
+            Comunícate con K’ÁAK’NÁAB - COMPANY para participar, compartir tus opiniones o realizar una donación.
+        </p>
+
+        <form id="form-contacto" class="form-contacto">
+            <div class="campo-formulario">
+                <label for="telefono">Número telefónico</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ej. 229 000 0000"
+                    required
+                >
+            </div>
+
+            <div class="campo-formulario">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+            </div>
+
+            <div class="campo-formulario">
+                <label for="opiniones">Opiniones</label>
+                <textarea
+                    id="opiniones"
+                    name="opiniones"
+                    placeholder="Escribe aquí tus opiniones..."
+                    required
+                ></textarea>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="tarjeta">Número de tarjeta para donaciones</label>
+                <input
+                    type="text"
+                    id="tarjeta"
+                    name="tarjeta"
+                    inputmode="numeric"
+                    maxlength="19"
+                    placeholder="0000 0000 0000 0000"
+                >
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+            <p id="mensaje-confirmacion" class="mensaje-confirmacion">
+                ¡Gracias por contactar a K’ÁAK’NÁAB - COMPANY!
+            </p>
+        </form>
+    </main>
+
+    <script>
+        const formContacto = document.getElementById("form-contacto");
+        const mensajeConfirmacion = document.getElementById("mensaje-confirmacion");
+
+        formContacto.addEventListener("submit", function (event) {
+            event.preventDefault();
+            mensajeConfirmacion.style.display = "block";
+            formContacto.reset();
+        });
+    </script>
+</body>
+</html>

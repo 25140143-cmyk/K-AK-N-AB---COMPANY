@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos</title>
+    <style>
+        body {
+            background-color: #92c5fc;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #003785;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .hipervinculo {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .hipervinculo a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hipervinculo a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-top: 30px;
+        }
+
+        /* Estilos compartidos para centrar los bloques */
+        .objetivo1, .objetivo2, .objetivo3 {
+            max-width: 1000px; /* Más ancho para que quepan bien texto e imagen */
+            margin: 0 auto;    /* Esto centra todo el contenedor en la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .objetivo1 {
+            flex-direction: row;
+        }
+
+        .objetivo2{
+            flex-direction: row-reverse;
+        }
+         .objetivo3 {
+            flex-direction: row;
+        }
+
+        .objetivo1 p, .objetivo2 p, .objetivo3 p {
+            font-size: 22px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* Solo afecta a las imágenes dentro de los objetivos, no al logo del navbar */
+        .objetivo1 img, .objetivo2 img, .objetivo3 img {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 30px; 
+        }
+        .objetivo1 img, .objetivo2 img, .objetivo3 img {
+    width: 350px;        /* Mismo ancho para todas */
+    height: 250px;       /* Mismo alto para todas */
+    object-fit: cover;   /* Rellena el espacio sin deformar la imagen */
+    flex-shrink: 0;      /* Evita que el texto empuje y encoja la imagen */
+    border-radius: 30px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="logo kaak naab.png" alt="Logo" width="100" height="70">
+                    K’ÁAK’NÁAB - COMPANY
+                </a>
+            </div>
+            <div class="hipervinculo">
+                <div><a href="file:///D:/kaak%20naab/index1.html">volver a inicio</a></div>
+                <div><a href="file:///D:/kaak%20naab/index2.html">Productos</a></div>
+                <div><a href="file:///D:/kaak%20naab/index3.html">Objetivo</a></div>
+                <div><a href="file:///D:/kaak%20naab/index4.html">Campañas</a></div>
+                <div><a href="file:///D:/kaak%20naab/index5.html">Contáctanos</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <h2 style="font-size: 35px;">Nuestro objetivo es:</h2>
+
+    <div class="objetivo1">
+        <p style="font-size: 22px;">
+            En <strong>K'AAK'NÁAB</strong> somos un proyecto y equipo comprometido con
+            la sostenibilidad, el cuidado del medio ambiente y la conservación de los
+            océanos y cuerpos de agua, alineados con el Objetivo 14 (Vida Submarina) de
+            la Agenda 2030. Nacimos con el propósito de enfrentar la
+            contaminación causada por residuos y plásticos convocando a la comunidad a
+            jornadas de limpieza, además de recolectar, clasificar y reutilizar desechos
+            para darles una segunda vida útil y proteger la vida submarina.
+        </p>
+        <img src="142030.png" alt="Objetivo 14 Vida Submarina">
+    </div>
+
+    <div class="objetivo2">
+        <p style="font-size: 22px;">
+            A través del reciclaje y la reutilización de materiales, transformamos los
+            residuos recolectados en artículos útiles y sostenibles —como mochilas,
+            lapiceras, sillas, escritorios o juegos reciclados— que se ofrecen a
+            precios accesibles para escuelas públicas, con alianzas como la Secretaría
+            de Educación Pública (SEP), para apoyar a niños que lo necesiten.
+            Nuestro trabajo se impulsa mediante campañas de concientización, talleres
+            educativos, donaciones, patrocinios, apoyos gubernamentales, venta de
+            productos reciclados y la cooperación de <strong>ECOLAF</strong> para pagos
+            iniciales.
+        </p>
+        <img src="logo kaak naab.png" alt="Logo Kaak Naab">
+    </div>
+
+    <div class="objetivo3">
+        <p style="font-size: 22px;">
+            Creemos en el trabajo en equipo, el consumo responsable y la participación
+            activa como vías para construir un futuro más limpio y saludable para las
+            próximas generaciones. Con nuestro lema <em>"Queremos dejar
+            un mundo mejor"</em>, buscamos educar a la población, fortalecer la
+            conciencia ambiental y avanzar de forma constante hacia la recuperación y
+            conservación de nuestros ecosistemas acuáticos.
+        </p>
+        <img src="queremos dejar un mundo mejor.webp" alt="Queremos dejar un mundo mejor">
+    </div>
+</body>
+</html>
